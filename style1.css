@@ -1,0 +1,153 @@
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right bottom, rgb(41, 80, 112), #a84e4e)   ;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    background: #000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Oswald', sans-serif;
+}
+
+#search {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 20px;
+    outline: none;
+    background: rgb(140, 173, 201);
+}
+
+.content {
+    display: flex;
+    background:  linear-gradient(to right bottom , rgb(41, 80, 112), #cf5656); 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+aside {
+    width: 250px;
+    margin-right: 20px;
+}
+
+aside h2, aside h3 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+aside ul li a:hover {
+    background-color: rgb(52, 93, 126);
+    transition: 0.1 ease-in-out;
+    padding: 8px 19px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgb(34, 34, 34);
+
+}
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie {
+    background: rgb(41, 80, 112); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.movie-info span {
+    background-color: #ff6b6b;
+    margin: 0 auto;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    align-self: flex-end;
+}
+
+
+.movie-overview {
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(255, 254, 254);
+}
+
+.movie-overview h4 {
+    margin: 0 0 10px 0;
+}
+.trailer-button {
+    font-size: 19px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    background-color: #ff6b6b;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    outline: none;
+}

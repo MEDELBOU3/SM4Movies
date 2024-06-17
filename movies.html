@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM.Movies</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>SM.Movies</h1>
+            <input type="text" id="search" placeholder="Search for a movie...">
+        </header>
+        <div class="content">
+            <aside>
+                <h2>Categories</h2>
+                <ul id="categories">
+                    <li><a href="#" onclick="filterMovies('movie')">Movies</a></li>
+                    <li><a href="#" onclick="filterMovies('tv')">TV Shows</a></li>
+                    <li><a href="#" onclick="filterMovies('anime')">Anime</a></li>
+                </ul>
+                <h3>Genres</h3>
+                <ul id="genres">
+                    <!-- Genres will be loaded here dynamically -->
+                </ul>
+            </aside>
+            <main id="main"></main>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
